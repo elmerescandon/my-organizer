@@ -1,0 +1,13 @@
+.home_info{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.home_info__title{
+    font-weight: 600;
+}
