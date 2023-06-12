@@ -1,46 +1,19 @@
-import Head from 'next/head';
-import React from 'react';
-import styles from '../styles/index.module.scss';
+"use client";
+
+import Container from '@mui/material/Container';
+import { Box, ThemeProvider } from '@mui/material';
+import theme from './mui.config';
+import styles from "../styles/home.module.scss";
+import HomeInfo from '@/components/molecules/HomeInfo/HomeInfo';
 
 const Home = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Momento - Daily Personal Organizer</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <ThemeProvider theme={theme}>
+      <Container className={styles.main}>
+        <HomeInfo/>
+      </Container>
+    </ThemeProvider>
 
-      <main>
-        <h1>Welcome to Momento</h1>
-        <p>Stay organized and productive every day!</p>
-
-        {/* Task Input */}
-        <form>
-          <input type="text" placeholder="Enter your task" />
-          <button type="submit">Add Task</button>
-        </form>
-
-        {/* Schedule Input */}
-        <form>
-          <input type="text" placeholder="Enter your schedule" />
-          <button type="submit">Add Schedule</button>
-        </form>
-
-        {/* Music Recommendations */}
-        <h2>Music Recommendations</h2>
-        {/* Display music recommendations here */}
-
-        {/* Achievements */}
-        <h2>Achievements</h2>
-        {/* Display achievements here */}
-      </main>
-
-      <footer>
-        <p>
-          Created by Your Name. &copy; {new Date().getFullYear()}
-        </p>
-      </footer>
-    </div>
   );
 };
 
