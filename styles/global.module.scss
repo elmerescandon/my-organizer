@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../public/fonts/Comfortaa-Bold.ttf') format('truetype'); /* Replace the font file path with the correct file name and extension */
+    src: url('../public/fonts/Comfortaa-Light.ttf') format('truetype'); /* Replace the font file path with the correct file name and extension */
+    src: url('../public/fonts/Comfortaa-Medium.ttf') format('truetype'); /* Replace the font file path with the correct file name and extension */
+    src: url('../public/fonts/Comfortaa-SemiBold.ttf') format('truetype'); /* Replace the font file path with the correct file name and extension */
+    /* Add more @font-face rules for other font styles if needed */
+  }
+  
+  /* Optionally, define a global CSS rule to apply the Comfortaa font to specific elements */
+.global {
+    font-family: 'Comfortaa', sans-serif;
+  }
